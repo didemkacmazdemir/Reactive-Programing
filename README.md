@@ -1,6 +1,6 @@
 # Reactive-Programing
 
-# Java Reactive Programming
+Java Reactive Programming
 
 Reactive programming is a declarative programming paradigm / an asynchronous programming style in which we use an event based model to push the data streams to the consumers / observers as and when the data is available / updated. It is completely asynchronous and non-blocking.
 In reactive programming, threads are not blocked or waiting for a request to complete. Instead they are notified when the request is complete / the data changes. Till then they can do other tasks. This makes us to use less resources to serve more requests.
