@@ -22,6 +22,7 @@ Pros
 
 we split the above 1 big synchronous task into 3 synchronous simple tasks (ie each step becomes a task). All these tasks are queued. All these tasks are read from a queue one by one and executed using dedicated worker threads from a thread-pool.  When there are no tasks in queue, worker threads would simply wait for the tasks to arrive.
 Usually number of worker threads would be small enough to match the number of available processors. This way, You can have 10000 tasks in the queue and process them all efficiently – but we can not create 10000 threads in a single machine.
+
 Cons
 
 So the event-driven programming model is NOT going to increase the performance (up to certain limit) or overall the response time could be still same. But it can process more number of concurrent requests efficiently!
